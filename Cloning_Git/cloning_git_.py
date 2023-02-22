@@ -8,12 +8,12 @@ Original file is located at
 """
 
 #cloning from github
-!git config --global user.name "amirreza82mh"
-!git config --global user.email "amirreza82mh@gmail.com"
-!git config --global user.password "159683724Am@"
+!git config --global user.name "username"
+!git config --global user.email "your email"
+!git config --global user.password "password"
 
-token = "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"
-username = "amirreza82mh"
-repo = "colab"
+token = "token"
+username = "username"
+repo = "repository"
 
 !git clone http://{token}@github.com/{username}/{repo}
