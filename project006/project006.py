@@ -17,6 +17,10 @@ print(s[ : 4])    #abcd
 print(s[2 : ])    #cdef
 print(s[ :: -1])   #fedcba
 
+s = 'amirgholami'
+print(len(s))
+print(max(s))
+print(min(s))
 print(ord('a'))
 print(chr(65))
 
@@ -58,3 +62,108 @@ for ch in s:
     k += int(ch)
 
 print('k = %i' %k)
+
+s = 'amirreza mehrabani'
+print(s.startswith('a'))
+print(s.startswith('e'))
+print(s.endswith('i'))
+print(s.endswith('f'))
+
+print('\n====================\n')
+
+#find
+print(s.find('a'))
+print(s.find('a' , 0))
+print(s.find('a' , 1))
+print(s.find('a' , 8))
+print(s.find('a' , 14))
+print(s.find('g'))
+
+print('\n====================\n')
+
+#index
+print(s.index('a'))
+print(s.index('a' , 1))
+print(s.index('a' , 8))   #print(s.index('g'))  ERROR
+
+print('\n====================\n')
+
+#count
+#print(s.count())  ERROR
+print(s.count('a'))
+print(s.count('a' , 5))
+
+print('\n====================\n')
+
+#Example
+s = 'amirreza82mh@gmail.com'
+a = s.find('@')
+print(s[a+1 : ])
+print(len(s[a+1 : ]))
+
+s = 'amirreza mehrabani'
+print(s.capitalize())
+print(s.title())
+print(s.upper())
+
+print('\n====================\n')
+
+s = 'Amirreza MEhrabani'
+print(s.lower())
+print(s.swapcase())
+
+print('\n====================\n')
+
+s = 'amirreza mehrabani'
+print(s.replace('mehrabani' , 'gholami'))
+print(s)
+print(s.replace('coft' , 'pedaret'))
+
+from posixpath import split
+#strip
+s = '@@@AM@IR@'
+print(s.strip('@'))
+print(s.strip('A'))
+print(s.lstrip('@'))
+print(s.rstrip('@'))
+
+print('\n====================\n')
+
+s = '@@ali@@'
+print(s.strip('@'))
+
+print('\n====================\n')
+
+#split
+s = 'amir bia saresho begir'
+a = s.split(' ')
+print(a)
+#join   s = ' '.join(b)
+b = ['amir' , 'bia' , 'saresho' , 'begir']
+s = " ".join(b)
+print(s)
+
+print('\n====================\n')
+
+#Example
+s = 'amirreza.py'
+b = s.split('.')
+print(b)
+print(b[1])
+
+print('\n====================\n')
+
+#Example
+s = 'amirreza@gmail.com'
+u , d = s.split('@')
+print(u)
+print(d)
+
+print('\n====================\n')
+
+#Example 
+s = 'amirreza\nmehrabani'
+b = s.split('\n')
+print(b)
+b = s.splitlines()
+print(b)
