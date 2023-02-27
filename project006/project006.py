@@ -142,7 +142,6 @@ print(a)
 b = ['amir' , 'bia' , 'saresho' , 'begir']
 s = " ".join(b)
 print(s)
-
 print('\n====================\n')
 
 #Example
@@ -167,3 +166,76 @@ b = s.split('\n')
 print(b)
 b = s.splitlines()
 print(b)
+
+print('\n====================\n')
+
+#example
+s = '127.02.0.001'  #127.2.0.1
+print(s)
+a = s.split('.')
+print(a)
+k = '.'.join([str(int(i)) for i in a])
+print(k)
+
+s = '4242'
+print(s.zfill(12))
+print(s.ljust(9 , '+'))
+print(s.rjust(9 , '+'))
+print(s.center(9 , '+'))
+
+print('\n====================\n')
+
+s = 'sara'
+print(s.zfill(7))
+print(s.ljust(7 , '*'))
+print(s.rjust(7 , '*'))
+print(s.center(7 , '*'))
+
+print('\n====================\n')
+
+n = 14
+print('{:d}'.format(n))   # 14
+print('{0:d}'.format(n))  # 14
+print('{:5d}'.format(n))   #   14
+
+print('\n====================\n')
+
+a = 12
+b = 15
+print('{0:d} , {1:.2f}'.format(a , b))
+print('{1:d} , {0:.2f}'.format(a , b))
+print('{0:.2f} , {1:d}'.format(a , b))
+print('-----------------------------')
+print(f'{a:d} , {b:.2f}')
+print(f'{b:d} , {a:.2f}')
+print(f'{a:.2f} , {b:d}')
+
+print('\n====================\n')
+
+a = 23421
+print('{:,}'.format(a))
+print(f'{a:,}')
+
+print('\n====================\n')
+
+a = 15.99
+b = -15.99
+print('{:.2f}'.format(a))
+print('{:.2f}'.format(b))
+
+print('\n====================\n')
+
+a = 0.83
+print('{0:.2%}'.format(a))
+print(f'{a:.2%}')
+
+print('\n====================\n')
+
+d = 24
+print('hexadecimal : ')
+print('{0:X}'.format(d))
+print('{0:#X}'.format(d))
+print('-----------------------------')
+print('binary : ')
+print('{0:b}'.format(d))
+print('{0:#b}'.format(d))
